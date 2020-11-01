@@ -8,7 +8,7 @@ Base Style
 
 Base class for reStructuredText markup implementations.
 
-:class:`BaseStyle` is used for :ref:`ReSTStyle<reststyle>`
+:class:`BaseStyle` is used for :ref:`ReSTStyle<rest-style>`
 
 .. class:: BaseStyle
 
@@ -78,3 +78,14 @@ Class that actually implements the functions that transform the text into a mark
 
 .. class:: ReSTStyle(BaseStyle)
 
+    .. method:: new_paragraph()
+
+        Creates two line breaks with indent spacing.
+
+    .. method:: new_line()
+
+        Creates two line breaks with indent spacing.
+
+    .. method:: bold(s)
+
+        Rurns text into bold mark. (between **)
